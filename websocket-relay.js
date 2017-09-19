@@ -8,8 +8,8 @@
 var fs = require('fs'),
 	http = require('http'),
 	WebSocket = require('ws');
-	var pusage = require('pidusage');
-	var readdir = require('fs').readdir;
+	pusage = require('pidusage');
+	readdir = require('fs').readdir;
 
 if (process.argv.length < 4) {
 	console.log(
@@ -23,7 +23,7 @@ if (process.argv.length < 4) {
 var STREAM_SECRET = process.argv[2],
 	STREAM_LPORT = process.argv[3] || 8081,
 	WEBSOCKET_STRPORT = process.argv[4] || 8082,
-	WEBSOCKET_STAPORT = process.argv[5],
+	WEBSOCKET_STAPORT = process.argv[5] || 8083,
 	RECORD_STREAM = false;
 
 // Websocket Server
