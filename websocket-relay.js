@@ -7,11 +7,11 @@
 
 var fs = require('fs'),
 	http = require('http'),
-	WebSocket = require('ws');
-	pusage = require('pidusage');
+	WebSocket = require('ws'),
+	pusage = require('pidusage'),
 	readdir = require('fs').readdir;
 
-if (process.argv.length < 4) {
+if (process.argv.length < 5) {
 	console.log(
 		'Usage: \n' +
 		'node websocket-relay.js <secret> [<stream-port> <websocket-port>]'
